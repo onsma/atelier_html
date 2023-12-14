@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Vérification d'accès</title>
+</head>
+<body>
+
+    <h1>Vérification d'accès</h1>
+    <p>Veuillez saisir votre e-mail pour accéder à cette page :</p>
+
+    <input type="email" id="emailInput" placeholder="Entrez votre e-mail">
+    <button onclick="verifierEmail()">Accéder</button>
+
+    <script>
+        function verifierEmail() {
+            var email = document.getElementById("emailInput").value;
+
+            // Vérification de l'e-mail spécifique (remplacez "email@specifique.com" par votre e-mail)
+            if (email === "ons.matmati@esprit.tn") {
+                // Redirection vers la page principale si l'e-mail est correct
+                window.location.href = "profil2.html";
+            } else {
+                // Alerte si l'e-mail est incorrect
+                alert("Accès refusé. Veuillez saisir l'e-mail correct.");
+            }
+        }
+    </script>
+</body>
+</html>
